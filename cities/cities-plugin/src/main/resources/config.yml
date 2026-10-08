@@ -1,0 +1,59 @@
+book:
+  name: "Книга управления городом"
+  lore:
+    - "ПКМ — открыть управление городом."
+visual:
+  # Install and activate the client resource pack to show the parchment page and button icons.
+  use-pixel-backgrounds: true
+storage:
+  sqlite-file: "cities.db"
+  busy-timeout-ms: 5000
+protection:
+  # Protected rectangles use chunk coordinates. Each entry requires a world UUID and inclusive bounds.
+  system-zones: []
+territory:
+  # Price per adjacent chunk, paid from the city treasury. Set to 0 for free claims.
+  chunk-price: 750
+progression:
+  # Promotion price is paid from the city treasury. Price 0 makes this transition free.
+  settlement-to-village:
+    enabled: true
+    price: 0
+    minimum-residents: 1
+    minimum-chunks: 4
+  village-to-city:
+    enabled: true
+    price: 10000
+    minimum-residents: 4
+    minimum-chunks: 8
+  city-to-capital:
+    enabled: true
+    price: 50000
+    minimum-residents: 8
+    minimum-chunks: 16
+  capital-to-kingdom:
+    enabled: true
+    price: 200000
+    minimum-residents: 16
+    minimum-chunks: 32
+upgrades:
+  city-warding:
+    enabled: true
+    price: 25000
+    minimum-stage: CITY
+    prerequisites: []
+  city-guards:
+    enabled: true
+    price: 100000
+    minimum-stage: CAPITAL
+    prerequisites:
+      - CITY_WARDING
+diplomacy:
+  # Maximum city treasury transfer per operation; an active TRADE treaty is required.
+  maximum-transfer-amount: 100000
+
+market:
+  # Maximum price for one listing. Buyers also pay the configured fee from city treasury.
+  maximum-listing-price: 1000000
+  # 500 basis points = 5%; the fee is credited to the selling city's treasury.
+  fee-basis-points: 500

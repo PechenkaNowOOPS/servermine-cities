@@ -1,0 +1,1 @@
+{"gui_light":"front","textures":{"0":"gradostroy:item/gui/button/menu_resident"},"elements":[{"from":[-1,0,7],"to":[17,16,8],"faces":{"north":{"uv":[0,0,16,16],"texture":"#0"},"south":{"uv":[0,0,16,16],"texture":"#0"}}}],"display":{"gui":{"rotation":[0,0,0],"translation":[0,0,0],"scale":[4,4,1]}}}

@@ -1,0 +1,29 @@
+{
+  "providers": [
+    {
+      "advances": {
+        " ": 4
+      },
+      "type": "space"
+    },
+    {
+      "ascent": -28,
+      "chars": [
+        "!\"#$%&'()*+,-./0",
+        "123456789:;<=>?@",
+        "ABCDEFGHIJKLMNOP",
+        "QRSTUVWXYZ[\\]^_`",
+        "abcdefghijklmnop",
+        "qrstuvwxyz{|}~ЁА",
+        "БВГДЕЖЗИЙКЛМНОПР",
+        "СТУФХЦЧШЩЪЫЬЭЮЯа",
+        "бвгдежзийклмнопр",
+        "стуфхцчшщъыьэюяё",
+        "«»·—…\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ],
+      "type": "bitmap",
+      "height": 8,
+      "file": "gradostroy:font/book/text.png"
+    }
+  ]
+}

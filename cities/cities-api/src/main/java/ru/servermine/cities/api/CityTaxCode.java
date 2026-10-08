@@ -1,0 +1,3 @@
+package ru.servermine.cities.api;
+
+public enum CityTaxCode { UPDATED, NO_CITY, PERMISSION_DENIED, STALE_CITY, INVALID_AMOUNT, COLLECTION_IN_PROGRESS, INTERNAL_ERROR }

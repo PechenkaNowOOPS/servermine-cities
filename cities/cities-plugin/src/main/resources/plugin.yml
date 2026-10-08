@@ -1,0 +1,16 @@
+name: ServerMineCities
+version: ${version}
+main: ru.servermine.cities.plugin.ServerMineCitiesPlugin
+api-version: '26.2'
+authors: [ServerMine]
+description: Модульная основа Cities и книга управления городом.
+depend: [ServerMineEconomy]
+libraries:
+  - org.xerial:sqlite-jdbc:${sqliteVersion}
+commands:
+  smcities:
+    description: Управление городом, дипломатия и команды участников
+    usage: /smcities <diplomacy|invite|accept|kick|leave|role|treasury|buy|exit|status|givebook|open|preview|test>
+permissions:
+  servermine.cities.admin:
+    default: op
